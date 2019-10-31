@@ -1,0 +1,60 @@
+h1, h2, h3, h4, h5 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+body {
+    font-family: 'B612', sans-serif;
+}
+
+
+.skateshop-image {
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.strong {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+}
+.span {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+}
+
+.brand-logos:hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;z
+    width: 40px;
+    -webkit-transform:scale(5.5);
+    transform:scale(5.5);
+
+}
+
+.lownav{
+padding-right: 0px;
+padding-left: 756px;
+width: 100%;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
