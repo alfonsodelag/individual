@@ -78,6 +78,8 @@ padding-left: 795px;
         justify-content: center;
         align-items: center;
         align-content: center;
+        height: 800px;
+        width: 800px;
 }
 
 .iframe-container {
