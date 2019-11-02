@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
-    <link href="portal.js" rel="text/script">
+    <link href="portal.js" rel="script">
     <script src="https://kit.fontawesome.com/b30ea8b267.js" crossorigin="anonymous"></script>
     <title>Contact Us</title>
 </head>
@@ -24,7 +24,7 @@
                     <li class="inline"><a href="aboutus.html" class="text-white mr-4">About Us</a></li>
                     <li class="inline"><a href="services.html" class="text-white mr-4">Our Services</a></li>
                     <li class="inline"><a href="gallery.html" class="text-white mr-4">Gallery</a></li>
-                    <li class="inline"><a href="moreinfo.html" class="text-white mr-4">Contact Us</a></li>
+                    <li class="inline"><a href="contactus.html" class="text-white mr-4">Contact Us</a></li>
                 </ul>
 <!-- Header Navbar ends here -->
 
@@ -91,7 +91,8 @@
 <!-- Main section starts here -->
     <main class="p-8 w-full  sm:pr-0 sm:pl-0 md:pr-0 md:pl-0 lg:pr-0 lg:pl-0 xl:pr-0 xl:pl-0 sm:w-2/3 md:w-2/3 lg:w-1/3 xl:1/3 mx-auto flex flex-col container mx-auto justify-center">
 <!-- FORM GOES HERE -->      
-    <form class="contact-form bg" onsubmit="return validate()" action="thanksforcontacting.html">
+    <form class="contact-form bg" onsubmit="return validate()" 
+    action="thanksforcontacting.html">
          <div>
              <input type="text" id="uname" class="input pb-3 pt-3" placeholder="Name">
              <input type="text" id="email" class="input pb-3 pt-3" placeholder="Email">
@@ -99,7 +100,7 @@
              <input type="text" id="subject" class="input pb-3 pt-3" placeholder="Subject">
          </div>
         <div class="dropdown">
-             <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+             <button  class="dropbtn">Dropdown</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#home">Interested in buying</a>
                     <a href="#about">Interested in repairing</a>
@@ -107,7 +108,7 @@
                 </div>
         </div>
          <div class="msg">
-             <textarea placeholder="Message"></textarea>
+             <textarea placeholder="Message" id="message"></textarea>
              <button class="btn" id="btn-send" type="submit">Submit</button>
          </div>
     </form>
@@ -127,35 +128,35 @@
         <div class="upper-footer flex">
 <!-- Footer lists -->
             <ul class="w-full mb-8 text-center sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 flex-col flex-wrap">
-                <li class="font-medium my-1"><a href="#"><strong>Company</strong></a></li>
-                <li class="font-light my-1"><a href="#">Repairs</a></li>
-                <li class="font-light my-1"><a href="">Contact</a></li>
-                <li class="font-light my-1"><a href="#">Profile</a></li>
-                <li class="font-light my-1"><a href="#">About</a></li>
+                <li><a href="#"><strong>Company</strong></a></li>
+                <li><a href="#">Repairs</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">About</a></li>
             </ul>
 
             <ul class="w-full mb-8 text-center sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 flex-col flex-wrap">
                 <li class="font-medium my-1"><a href="#"><strong>Items on Sale</strong></a></li>
-                <li class="font-light my-1"><a href="#">Location</a></li>
-                <li class="font-light my-1"><a href="#">Profile</a></li>
-                <li class="font-light my-1"><a href="#">Solutions</a></li>
-                <li class="font-light my-1"><a href="#">Facilities Services</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Facilities Services</a></li>
             </ul>
 
             <ul class="w-full mb-8 text-center sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 flex-col flex-wrap">
                 <li class="font-medium my-1"><a href="#"><strong>Workplace Staffing</strong></a></li>
-                <li class="font-light my-1"><a href="#">Project Management</a></li>
-                <li class="font-light my-1"><a href="#">Products & Services</a></li>
-                <li class="font-light my-1"><a href="#">Clothing</a></li>
-                <li class="font-light my-1"><a href="#">Job Offerings</a></li>
+                <li><a href="#">Project Management</a></li>
+                <li><a href="#">Products & Services</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Job Offerings</a></li>
             </ul>
 
             <ul class="w-full mb-8 text-center sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 flex-col flex-wrap">
                 <li class="font-medium my-1"><a href="#"><strong>Products & Services</strong></a></li>
-                <li class="font-light my-1"><a href="#">CEO</a></li>
-                <li class="font-light my-1"><a href="#">Our team</a></li>
-                <li class="font-light my-1"><a href="#">Our partners</a></li>
-                <li class="font-light my-1"><a href="#">Other Stuff</a></li>
+                <li><a href="#">CEO</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Our partners</a></li>
+                <li><a href="#">Other Stuff</a></li>
             </ul>
 
         </div>
@@ -202,24 +203,6 @@
     </footer>
 
 <!-- Javascript -->
-<script>
-    function validate ()
-    {
-        var name = document.getElementById("uname")
-        var email = document.getElementById("email")
-        var phone = document.getElementById("phone")
-        var subject = document.getElementById("subject")
-      
-      if(name.value =="" ||password.value=="")
-    {
-        alert("No blank values allowed");
-        return false; 
-    }
-    else
-    {
-        true;   
-    }
-    }
-</script>
+<script type="text/javascript" src="portal.js"></script>
 </body>
 </html>
