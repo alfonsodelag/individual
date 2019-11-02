@@ -6,6 +6,7 @@ h1, h2, h3, h4, h5 {
 }
 body {
     font-family: 'B612', sans-serif;
+    background: url();
 }
 
 
@@ -36,21 +37,30 @@ p{
 
 }
 
-.brand-logos:hover {
+#little-logo {
+    height: 350px;
+    width: 350px;
+}
+
+.brand-logos {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 40px;
-    width: 40px;
-    -webkit-transform:scale(2.5);
-    transform:scale(2.5);
-
+    height: 500px;
+    width: 500px;
 }
 
 .lownav {
 padding-right: 140px;
 padding-left: 795px;
 } 
+.contact-form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
 
 #footer-logo{
     margin-right: 146px;
@@ -113,6 +123,21 @@ padding-left: 795px;
     top: -20px;
     position: relative;
 }
+.container {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#im-interested-button{
+    margin-bottom: 100px;
+    margin-left: 580px;
+}
+
+#btn-send {
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: "montserrat";
+}
 
 .slider-button {
     display: inline-block;
@@ -132,6 +157,146 @@ padding-left: 795px;
     left: -1600px;
 }
 
+.wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
 
+.contact-form {
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba (0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
 
+.selling-p{
+    width: 500px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+    width: 100%;
+}
+
+.input-fields .input, 
+.msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+
+.msg textarea {
+    height: 212px;
+    width: 174px;
+}
+
+::-webkit-input-placeholder {
+    color: #c5ecfd;
+}
+::-moz-input-placeholder {
+    color: #c5ecfd;
+}
+::-ms-input-placeholder {
+    color: #c5ecfd;
+}
+
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    .contact-form {
+        flex-direction: column;
+    }
+    .msg textarea {
+        height: 80px;
+    }
+    .input-fields,
+    .msg {
+        width: 100%;
+    }
+}
+
+.modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
 
