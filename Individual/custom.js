@@ -1,4 +1,3 @@
-alert('Hello')
 function validate ()
 {
     var name = document.getElementById("uname")
