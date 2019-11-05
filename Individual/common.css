@@ -50,10 +50,9 @@ p{
     width: 500px;
 }
 
-.lownav {
-padding-right: 140px;
-padding-left: 795px;
-} 
+.border {
+    border: 1px solid black;
+}
 
 .contact-form {
     margin: 0;
@@ -63,8 +62,9 @@ padding-left: 795px;
     font-family: 'Roboto', sans-serif;
 }
 
-#footer-logo{
-    margin-right: 146px;
+.center{
+    text-align-last: center;
+    text-align: -webkit-center;
 }
 
 #category-breadcrumb {
@@ -188,6 +188,10 @@ padding-left: 795px;
     margin-right: 4%;
 }
 
+legend {
+    background: greenyellow;
+}
+
 .input-fields,
 .msg {
     width: 100%;
@@ -200,7 +204,7 @@ padding-left: 795px;
     border: 0;
     border-bottom: 2px solid #c5ecfd;
     padding: 10px;
-    color: #c5ecfd;
+    color: black;
     width: 100%;
 }
 
@@ -308,12 +312,6 @@ padding-left: 795px;
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
   
-  module.exports = {
-    plugins: [
-      require('tailwindcss'),
-      require('autoprefixer'),
-    ]
-  }
 
   ul.breadcrumb {
     padding: 10px 16px;
@@ -340,3 +338,55 @@ padding-left: 795px;
   
   @media all and (-ms-high-contrast:none) { .clasecolor { color: green } /* IE10 */ *::-ms-backdrop, .clasecolor { color: red } /* IE11 */ }
 
+.featuredcontent {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+  }
+
+  #header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right,#dadadad4 0%,#ffffffdb 100%);
+    z-index: 999;
+  }
+  #header img {
+    max-width: 150px;
+  }
+  #header .nav-item a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 11px 16px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    position: relative;
+    margin: 14px 0;
+  }
+  #header .navbar-toggler {
+    outline: none;
+    cursor: pointer;
+  }
+  #header .navbar-toggler .toggler-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #121212;
+    margin: 5px 0;
+    display: block;
+    position: relative;
+  }
+  #header .navbar-collapse .nav-item {
+    padding: 12px 0;
+  }
+  .header-spacer {
+    min-height: 86px;
+  }
+  #header{
+    padding: 0;
+  }
